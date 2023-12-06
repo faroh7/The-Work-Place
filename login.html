@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelance Portal</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-header">
+            <a href="index.html">The Work Place</a>
+        </div>
+        <ul class="navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            
+            <li><a href="login.html">Log In</a></li>
+        </ul>
+    </nav>
+    <section class="login-section">
+        <form action="login.php" method="post" class="form-container">
+            <h1>Login</h1>
+            <hr />
+
+            <div class="form-group">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" id="uname" required />
+            </div>
+
+            <div class="form-group">
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" id="psw" required />
+            </div>
+
+            <button type="submit" name="login_submit"  class="loginbtn">Login</button>
+
+            <div class="alternative-options">
+                <p>Dont have an account? <a href="signup_Customer.html">Sign up as a Customer</a> or <a href="signup_Freelancer.html">Sign up as a Freelancer</a></p>
+                <p><a href="forgot_password.html">Forgot Password?</a></p>
+            </div>
+        </form>
+    </section>
+
+    <script src="js/login_validation.js" charset="utf-8"></script>
+    
+    <footer class="footer-enhanced">
+        <div class="footer-section">
+            <h3>Freelance Workers Portal</h3>
+            <ul class="footer-links">
+                <li><a href="index.html">Homepage</a></li>
+                <li><a href="about.html">Contact</a></li>
+            </ul>
+            <p>&copy; 2023 Freelance Workers Portal</p>
+        </div>
+    
+        <div class="footer-section">
+            <h4>Contact Info</h4>
+            <p><i class="fa fa-map-marker"></i> South C amana, Nairobi, Kenya</p>
+            <p><i class="fa fa-phone"></i> +254726130837</p>
+            <p><i class="fa fa-envelope"></i> <a href="mailto:fardosanur811@gmail.com">Email us</a></p>
+        </div>
+    
+        <div class="footer-section">
+            <h4>Our Commitment</h4>
+            <p>We are dedicated to providing the best platform for freelancers and clients to connect and succeed together.</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/FWP"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.twitter.com/FWP"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/FWP"><i class="fa fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+    </body>
+</html>

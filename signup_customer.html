@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelance Portal - Sign Up as a Customer</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-header">
+            <a href="index.html">The Work Place</a>
+        </div>
+        <ul class="navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="login.html">Log In</a></li>
+        </ul>
+    </nav>
+
+    <main class="signup-container">
+        <form name="signup_Customer" action="signup_cust.php" method="post" onsubmit="return validateForm()" enctype="multipart/form-data">
+            <h1>Sign Up as a Customer</h1>
+            <p>Fill in this form to create an account with Freelance Workers Portal.</p>
+            <hr />
+
+            <div class="form-group">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="Username" required />
+            </div>
+
+            <div class="form-group">
+                <label for="email"><b>Email</b></label>
+                <input type="email" placeholder="Enter Email" name="Email" required />
+            </div>
+
+            <div class="form-group">
+                <label for="profile_pic"><b>Profile Picture</b></label>
+                <input type="file" id="profile_pic" name="profile_pic" accept="image/*" />
+            </div>
+
+            <div class="form-group">
+                <label for="Password"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="Password" required />
+            </div>
+
+            <div class="form-group">
+                <label for="first-name"><b>First Name</b></label>
+                <input type="text" placeholder="First Name" name="First_Name" required />
+            </div>
+
+            <div class="form-group">
+                <label for="last-name"><b>Last Name</b></label>
+                <input type="text" placeholder="Last Name" name="Last_Name" required />
+            </div>
+
+            <div class="form-group">
+                <label for="phone"><b>Phone Number</b></label>
+                <input type="tel" placeholder="+254 *** *** ***" name="Phone_Number" required />
+            </div>
+
+            <div class="form-group">
+                <p>By creating an account, you agree to our <a href="privacy.html">Terms & Privacy</a>.</p>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" name="submit" class="signupbtn">Sign Up as a Customer</button>
+            </div>
+        </form>
+    </main>
+
+    <script src="js/customer_validation.js" charset="utf-8"></script>
+    <footer class="footer-enhanced">
+        <div class="footer-section">
+            <h3>Freelance Workers Portal</h3>
+            <ul class="footer-links">
+                <li><a href="index.html">Homepage</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <p>&copy; 2023 Freelance Workers Portal</p>
+        </div>
+    
+        <div class="footer-section">
+            <h4>Contact Info</h4>
+            <p><i class="fa fa-map-marker"></i> South C amana, Nairobi, Kenya</p>
+            <p><i class="fa fa-phone"></i> +254726130837</p>
+            <p><i class="fa fa-envelope"></i> <a href="mailto:fardosanur811@gmail.com">Email us</a></p>
+        </div>
+    
+        <div class="footer-section">
+            <h4>Our Commitment</h4>
+            <p>We are dedicated to providing the best platform for freelancers and clients to connect and succeed together.</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/FWP"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.twitter.com/FWP"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/FWP"><i class="fa fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

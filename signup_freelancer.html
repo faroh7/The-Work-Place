@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelance Portal</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-header">
+            <a href="index.html">The Work Place</a>
+        </div>
+        <ul class="navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="login.html">Log In</a></li>
+        </ul>
+    </nav>
+
+    <section class="signup-section">
+        <form name="signup_Freelancer" action="signup_freelancer.php" method="post" onsubmit="return validateForm()" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Sign Up as a Freelancer</legend>
+                <p>Fill in this form to create an account with Freelance Workers Portal.</p>
+                <hr />
+
+                <div class="form-group">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="Username_f" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="email"><b>Email</b></label>
+                    <input type="email" placeholder="Enter Email" name="Email_f" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="profilepic"><b>Profile Picture</b></label>
+                    <input type="file" id="profilepic" name="profile_pic_f" accept="image/*" />
+                </div>
+
+                <div class="form-group">
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="Password_f" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="first-name"><b>First Name</b></label>
+                    <input type="text" id="first-name" placeholder="First Name" name="First_Name_f" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="last-name"><b>Last Name</b></label>
+                    <input type="text" id="last-name" placeholder="Last Name" name="Last_Name_f" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="phone"><b>Phone Number</b></label>
+                    <input type="tel" id="phone" placeholder="254 *** *** ***" name="Phone_Number_f" required />
+                </div>
+
+                <fieldset class="role-selection">
+                    <legend><b>The role of Freelancer</b></legend>
+                    <label><input type="checkbox" name="Role[]" value="graphic design" />graphic design </label>
+                    <label><input type="checkbox" name="Role[]" value="web development" /> web development</label>
+                    <label><input type="checkbox" name="Role[]" value="content writing" /> content writing</label>
+                    <label><input type="checkbox" name="Role[]" value="digital marketting" />digital marketting </label>
+                </fieldset>
+
+                <div class="form-group">
+                    <label for="summary"><b>Summary</b></label>
+                    <textarea id="summary" name="Summary" placeholder="Talk about Area of expertise, Past projects and Locations available" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="portfolio"><b>Portfolio as an image</b></label>
+                    <input type="file" id="portfolio" name="portfolio" accept="image/*" />
+                    <p class="small">If you do not have a portfolio, you can make one here - <a href="https://www.jimdo.com/website/portfolio/" style="color: dodgerblue">Jimdo</a></p>
+                </div>
+
+                <div class="form-group">
+                    <p>By creating an account you agree to our <a href="privacy.html" style="color: dodgerblue">Terms & Privacy</a>.</p>
+                </div>
+
+                <div class="form-group form-actions">
+                    <button type="submit" name="submit" class="signupbtn">Sign Up as a Freelancer</button>
+                </div>
+            </fieldset>
+        </form>
+    </section>
+
+
+    <script src="js/freelancer_validation.js" charset="utf-8"></script>
+    <footer class="footer-enhanced">
+        <div class="footer-section">
+            <h3>Freelance Workers Portal</h3>
+            <ul class="footer-links">
+                <li><a href="index.html">Homepage</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <p>&copy; 2023 Freelance Workers Portal</p>
+        </div>
+    
+        <div class="footer-section">
+            <h4>Contact Info</h4>
+            <p><i class="fa fa-map-marker"></i> South C amana, Nairobi, Kenya</p>
+            <p><i class="fa fa-phone"></i> +254726130837</p>
+            <p><i class="fa fa-envelope"></i> <a href="mailto:fardosanur811@gmail.com">Email us</a></p>
+        </div>
+    
+        <div class="footer-section">
+            <h4>Our Commitment</h4>
+            <p>We are dedicated to providing the best platform for freelancers and clients to connect and succeed together.</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/FWP"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.twitter.com/FWP"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/FWP"><i class="fa fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
